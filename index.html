@@ -1,0 +1,131 @@
+<html>
+
+<head>
+<title>Widget Store</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+<!-- Owl Carousel Assets -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<link href="css/owl.theme.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="header"><center><p style="padding-top:10;">Widget Store</p></center><a href="about.html"><img src="img/info.svg" class="info"></img></a></div>
+
+
+      <div id="demo">
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <div id="owl-demo" class="owl-carousel">
+
+                <div class="item"><img src="img/retina.jpg"></div>
+                <div class="item"><img src="img/missioncontrol.jpg"></div>
+                <div class="item"><img src="img/dockexpander.jpg"></div>
+                <div class="item"><img src="img/slideoutmusic.jpg"></div>
+                <div class="item"><img src="img/hub.jpg"></div>
+                <div class="item"><img src="img/dockexpander.jpg"></div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+   
+ 
+<div id="new" class="widgets first">
+
+<p class="section-title">New Widgets</p>
+
+	<div class="apps">
+	<a href="widgets/retina.html"><img src="img/icons/retina.png" class="icon"></img></a>
+	<a href="widgets/mc.html"><img src="img/icons/mc.png" class="icon"></img></a>
+	<a href="widgets/sm.html"><img src="img/icons/sm.png" class="icon"></img></a>
+	<a href="widgets/de.html"><img src="img/icons/de.png" class="icon"></img></a>
+	</div>
+
+</div>
+
+<div id="new" class="widgets">
+
+<p class="section-title">Top Widgets</p>
+
+	<div class="apps">
+	<img src="img/app.png" class="icon"></img>
+	<img src="img/app.png" class="icon"></img>
+	<img src="img/app.png" class="icon"></img>
+	<img src="img/app.png" class="icon"></img>
+	</div>
+
+</div>
+
+<div id="new" class="widgets">
+
+<p class="section-title">Free</p>
+
+	<div class="apps">
+	<img src="img/app.png" class="icon"></img>
+	<img src="img/app.png" class="icon"></img>
+	<img src="img/app.png" class="icon"></img>
+	<img src="img/app.png" class="icon"></img>
+	</div>
+
+</div>
+
+    <script src="js/jquery-1.9.1.min.js"></script> 
+    <script src="js/owl.carousel.js"></script>
+
+ 
+<!--initate featured widget carousel-->
+    <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+
+      navigation : false,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true,
+      
+      autoPlay : 5000,
+      stopOnHover : false,
+      items : 6,
+      rewindNav:false //**This
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+      });
+    });
+    </script>
+
+    
+    <!--Alert user when entering landscape mode-->
+    <script>           
+  function doOnOrientationChange()
+  {
+    switch(window.orientation) 
+    {  
+      case -90:
+      case 90:
+        alert('This App isnt fully responisve in landscape mode (yet)');
+        break; 
+      default:
+        
+        break; 
+    }
+  }
+
+  window.addEventListener('orientationchange', doOnOrientationChange);
+
+  // Initial execution if needed
+  doOnOrientationChange();
+</script>
+
+</body>
+
+</html>
