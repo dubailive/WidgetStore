@@ -19,3 +19,4 @@ function commentsTapped() {
 	document.getElementById("details-menu").classList.add("hidden");
 	
 	}
+	

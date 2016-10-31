@@ -1,6 +1,7 @@
 body{
 
 	font-family:-apple-system !important;
+	overflow-x:hidden;
 
 }
 
@@ -129,6 +130,14 @@ body{
 	
 }
 
+.icon-scroll{
+	margin-left:-10;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	height:120;
+	width:103%;
+}
+
 
 #information{
 	margin-left:10;
@@ -141,6 +150,17 @@ body{
 
 .hidden{
 	display:none;
+}
+
+
+#about-info{
+	margin-top: 100;
+}
+
+#its-me{
+	width: 300px; 
+	height: auto; 
+	border-radius:10px;
 }
 
 ul {list-style:none; display:block;white-space:nowrap;}
