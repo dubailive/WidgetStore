@@ -19,6 +19,59 @@ body{
 	box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
 }
 
+#tab-bar{
+	width:100%;
+	height:50px;
+	position:fixed;
+	left:0;
+	bottom:0;
+	z-index: 5;
+	background-color: rgba(255, 255, 255, 0.75);
+	-webkit-backdrop-filter:blur(5px);
+	-webkit-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 24px -4px rgba(0,0,0,0.75);
+}
+
+.tab-bar-item1{
+	position: absolute;
+	top: 15;
+	left: 17%;
+	color:#157EFB;
+}
+
+.tab-bar-icon1{
+	position: absolute;
+	top: 4;
+	left: 20%;
+}
+
+.tab-bar-item2{
+	position: absolute;
+	top: 15;
+	left: 46%;
+	color:#157EFB;
+}
+
+.tab-bar-icon2{
+	position: absolute;
+	top: 3;
+	left: 45%;
+}
+
+.tab-bar-item3{
+	position: absolute;
+	top: 15;
+	left: 65%;
+	color:#157EFB;
+}
+
+.tab-bar-icon3{
+	position: absolute;
+	top: 4;
+	left: 67%;
+}
+
 
 
 #demo{
@@ -43,7 +96,6 @@ body{
 
 .widgets{
 	width:100%;
-	height:150px;
 	border-bottom: 1px solid rgba(118, 118, 118, 0.5);
 	position:relative;
 	margin-left:-10%;
@@ -55,6 +107,7 @@ body{
 	height:80;
 	margin-left:40;
 	width:90%;
+	margin-top:-20;
 	
 }
 
@@ -63,10 +116,14 @@ body{
 	height:80;
 	display:relative;
 	border-radius:15px;
-	
+	margin-left:5px;
 
 }
 
+.empty{
+	visibility:hidden;
+	width:10;
+}
 .info{
 	position:absolute;
 	right:5;
