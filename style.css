@@ -229,6 +229,22 @@ body{
 	padding-top: 15;
 }
 
+.wallpaper-thumb{
+	width: 150;
+	height: auto;
+	border-radius: 5px;
+	margin:10;
+	-webkit-box-shadow: 0px 0px 51px -10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 51px -10px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 51px -10px rgba(0,0,0,0.75);
+}
+
+
+
+
+
+
+/*Owl Stuff*/
 
 ul {list-style:none; display:block;white-space:nowrap;}
 li {width: 100px;display:inline;}
