@@ -125,6 +125,13 @@ body{
 	font-size: 15;
 }
 
+.app-author{
+	position: absolute;
+	top: 121;
+	left:150;
+	font-size: 15;
+}
+
 .widget-screenshot{
 	height:350;
 	width:auto;
@@ -240,9 +247,89 @@ body{
 }
 
 
+/*Attempt to fix scaling*/
 
+@media screen and (height: 736px) {
+    #quick-links {
+        margin-top: 70px;
+    }
+}
 
+@media screen and (width: 736px) {
+    #quick-links {
+        margin-top: 260px;
+    }
+    
+    .apps{
+	margin-left:30px;
+    }
+    
+    .section-title{
+	margin-left:80;
+    }
+}
 
+@media screen and (height: 736px) {
+    #quick-links {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (width: 568px) {
+    #quick-links {
+        margin-top: 160px;
+    }
+    
+    .apps{
+	margin-left:30px;
+    }
+    
+    .section-title{
+	margin-left:80;
+    }
+}
+
+@media screen and (width: 480px) {
+    #quick-links {
+        margin-top: 110px;
+    }
+    
+    .apps{
+	margin-left:10px;
+    }
+    
+    .section-title{
+	margin-left:60;
+    }
+}
+
+@media screen and (width: 768px) {
+    #quick-links {
+        margin-top: 270px;
+    }
+    
+    .apps{
+	margin-left:40px;
+    }
+    
+    .section-title{
+	margin-left:90;
+    }
+}
+
+@media screen and (width: 1024px) {
+    #quick-links {
+        margin-top: 420px;
+    }
+    
+    .apps{
+	margin-left:60px;
+    }
+    
+    .section-title{
+	margin-left:110;
+    }
+}
 
 /*Owl Stuff*/
 
